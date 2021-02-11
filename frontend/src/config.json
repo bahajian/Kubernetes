@@ -1,0 +1,10 @@
+{
+  "api": { 
+    "invokeUrl": "http://localhost:5000"
+  },
+  "cognito": {
+    "REGION": "us-east-1",
+    "USER_POOL_ID": "us-east-1_ywlpGmXVA",
+    "APP_CLIENT_ID": "6ml2fa999vmaqduce9roiom6s0"
+  }
+}

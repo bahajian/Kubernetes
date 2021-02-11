@@ -1,0 +1,2 @@
+---------------------------------------------------------------
+npm install --S express mysql bcrypt body-parser
