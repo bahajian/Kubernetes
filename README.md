@@ -93,3 +93,10 @@ kubectl get service SERVICE_NAME -o yaml
 if the container is listening on a port different than 80 we need to define it in the command using the target node.
 
 
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
+
+Please make sure to update tests as appropriate.
+
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
