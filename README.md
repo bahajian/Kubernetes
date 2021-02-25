@@ -8,6 +8,32 @@
 
 ##### line 5
 
+
+## Table of contents
+* [General info](#general-info)
+* [Technologies](#technologies)
+* [Setup](#setup)
+
+
+
+* A `build.yaml` file at the root is the source of truth for listing all the
+targets and files needed to build grpc and its tests, as well as a basic system
+for dependency description.
+
+
+
+
+
+
+
+
+
+
+
+
+
+## technologies
+
 ### 01- Create EKS Cluster using eksctl:
 
 ```
@@ -54,7 +80,7 @@ eksctl create nodegroup --cluster=node-server \
 ```
 Get Worker Nodes Status and other actions:
 
-```
+```bash
 kubectl get nodes -o wide
 kubectl describe pod my-first-pod 
 kutectl delete nodegroup 
@@ -85,14 +111,16 @@ kubectl get pod POD_NAME -o yaml
   
 
 ### 05- Expose Pod as a Service:
-```
+```python
+import alaki
+import dolaki
 kubectl expose pod <Pod-Name>  --type=NodePort --port=80 --name=<Service-Name>
 
 kubectl get service SERVICE_NAME -o yaml
 ```
 if the container is listening on a port different than 80 we need to define it in the command using the target node.
 
-
+## setup
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
@@ -100,3 +128,6 @@ Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+
+
